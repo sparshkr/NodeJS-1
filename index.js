@@ -1,5 +1,8 @@
 var express = require("express");
 var app = express();
+const cors = require("cors");
+
+app.use(cors());
 
 function getTime(date) {
   const days = [
